@@ -1,3 +1,5 @@
+[![](https://travis-ci.org/imagej/imagej-command-archetype.svg?branch=master)](https://travis-ci.org/imagej/imagej-command-archetype)
+
 imagej-command-archetype
 ========================
 
