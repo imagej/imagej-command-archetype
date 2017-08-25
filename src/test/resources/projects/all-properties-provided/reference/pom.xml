@@ -45,6 +45,12 @@
 		</developer>
 	</developers>
 
+	<contributors>
+		<contributor>
+			<name>Test Dev</name>
+		</contributor>
+	</contributors>
+
 	<mailingLists>
 		<mailingList>
 			<name>ImageJ Forum</name>
