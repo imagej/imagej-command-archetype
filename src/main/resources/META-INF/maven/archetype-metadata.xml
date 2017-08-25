@@ -17,4 +17,42 @@
       </includes>
     </fileSet>
   </fileSets>
+  <requiredProperties>
+    <!-- Sorted by order of interactive querying -->
+    <requiredProperty key="description" />
+    <requiredProperty key="developerId">
+      <defaultValue>${package.getClass().forName("java.lang.System").getProperty("user.name")}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="developerName" />
+    <requiredProperty key="developerUrl">
+      <defaultValue>https://imagej.net/User:${developerId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="inceptionYear">
+      <defaultValue>${package.getClass().forName("java.time.Year").now().toString()}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="main-class">
+      <defaultValue>${package}.${artifactId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="name" />
+    <requiredProperty key="organizationId" />
+    <requiredProperty key="organizationName" />
+    <requiredProperty key="organizationUrl">
+      <defaultValue>https://github.com/${organizationId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="scmConnection">
+      <defaultValue>scm:git:git://github.com/${organizationId}/${artifactId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="scmDeveloperConnection">
+      <defaultValue>scm:git:git@github.com:${organizationId}/${artifactId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="scmUrl">
+      <defaultValue>https://github.com/${organizationId}/${artifactId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="url">
+     <defaultValue>https://imagej.net/${artifactId}</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="urlIssueManagement">
+      <defaultValue>${scmUrl}/issues</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
 </archetype-descriptor>
