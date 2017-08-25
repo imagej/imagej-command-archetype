@@ -12,13 +12,13 @@
 	<artifactId>${artifactId}</artifactId>
 	<version>${version}</version>
 
-	<name>Gauss Filtering</name>
-	<description>A Maven project implementing an ImageJ command.</description>
-	<url>http://mycompany.com/imagej/gauss-filtering/</url>
-	<inceptionYear>2017</inceptionYear>
+	<name>${name}</name>
+	<description>${description}</description>
+	<url>${url}</url>
+	<inceptionYear>${inceptionYear}</inceptionYear>
 	<organization>
-		<name>My Company</name>
-		<url>http://mycompany.com/</url>
+		<name>${organizationName}</name>
+		<url>${organizationUrl}</url>
 	</organization>
 	<licenses>
 		<license>
@@ -30,9 +30,9 @@
 	<developers>
 		<!-- See https://imagej.net/Team -->
 		<developer>
-			<id>ctrueden</id>
-			<name>Curtis Rueden</name>
-			<url>http://imagej.net/User:Rueden</url>
+			<id>${developerId}</id>
+			<name>${developerName}</name>
+			<url>${developerUrl}</url>
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -44,14 +44,6 @@
 			</roles>
 		</developer>
 	</developers>
-	<contributors>
-		<contributor>
-			<name>Yili Zhao</name>
-			<url>http://imagej.net/User:Panovr</url>
-			<roles><role>founder</role></roles>
-			<properties><id>panovr</id></properties>
-		</contributor>
-	</contributors>
 
 	<mailingLists>
 		<mailingList>
@@ -61,22 +53,22 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/imagej/example-imagej-command</connection>
-		<developerConnection>scm:git:git@github.com:imagej/example-imagej-command</developerConnection>
+		<connection>${scmConnection}</connection>
+		<developerConnection>${scmDeveloperConnection}</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/example-imagej-command</url>
+		<url>${scmUrl}</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/imagej/example-imagej-command/issues</url>
+		<url>${urlIssueManagement}</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
 	</ciManagement>
 
 	<properties>
-		<package-name>com.mycompany.imagej</package-name>
-		<main-class>com.mycompany.imagej.GaussFiltering</main-class>
+		<package-name>${package}</package-name>
+		<main-class>${main-class}</main-class>
 		<license.licenseName>bsd_2</license.licenseName>
 		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
 	</properties>
