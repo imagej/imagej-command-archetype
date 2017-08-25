@@ -108,6 +108,16 @@ Wisconsin-Madison, University of Konstanz and Brian Northan.</license.copyrightO
           <artifactId>maven-archetype-plugin</artifactId>
           <version>3.0.1</version>
         </plugin>
+        <plugin>
+          <groupId>net.imagej</groupId>
+          <artifactId>imagej-maven-plugin</artifactId>
+          <executions>
+              <execution>
+                  <id>copy-jars</id>
+                  <phase/>
+              </execution>
+          </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
