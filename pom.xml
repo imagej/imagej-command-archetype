@@ -44,6 +44,14 @@
         <role>maintainer</role>
       </roles>
     </developer>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<url>https://imagej.net/User:Rueden</url>
+			<roles>
+				<role>maintainer</role>
+			</roles>
+		</developer>
   </developers>
 
   <contributors>
