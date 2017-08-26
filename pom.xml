@@ -20,7 +20,7 @@
   <inceptionYear>2017</inceptionYear>
   <organization>
     <name>ImageJ</name>
-    <url>http://imagej.net/</url>
+    <url>https://imagej.net/</url>
   </organization>
   <licenses>
     <license>
@@ -33,7 +33,7 @@
     <developer>
       <id>stelfrich</id>
       <name>Stefan Helfrich</name>
-      <url>http://imagej.net/User:Stelfrich</url>
+      <url>https://imagej.net/User:Stelfrich</url>
       <roles>
         <role>founder</role>
         <role>lead</role>
