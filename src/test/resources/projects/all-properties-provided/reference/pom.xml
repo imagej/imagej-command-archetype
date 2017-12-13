@@ -47,7 +47,7 @@
 
 	<contributors>
 		<contributor>
-			<name>Test Dev</name>
+			<name>None</name>
 		</contributor>
 	</contributors>
 
@@ -76,7 +76,7 @@
 		<package-name>com.mycompany</package-name>
 		<main-class>com.mycompany.MyCommand</main-class>
 		<license.licenseName>bsd_2</license.licenseName>
-		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners>
+		<license.copyrightOwners>TestOrg.</license.copyrightOwners>
 	</properties>
 
 	<repositories>
