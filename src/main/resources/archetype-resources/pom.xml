@@ -76,7 +76,7 @@
 		<package-name>${package}</package-name>
 		<main-class>${main-class}</main-class>
 		<license.licenseName>bsd_2</license.licenseName>
-		<license.copyrightOwners>${organizationName}</license.copyrightOwners>
+		<license.copyrightOwners>${organizationName}.</license.copyrightOwners>
 	</properties>
 
 	<repositories>
