@@ -19,6 +19,7 @@
   </fileSets>
   <requiredProperties>
     <!-- Sorted by order of interactive querying -->
+    <requiredProperty key="commandClassName" />
     <requiredProperty key="description" />
     <requiredProperty key="developerId">
       <defaultValue>${package.getClass().forName("java.lang.System").getProperty("user.name")}</defaultValue>
@@ -31,7 +32,7 @@
       <defaultValue>${package.getClass().forName("java.time.Year").now().toString()}</defaultValue>
     </requiredProperty>
     <requiredProperty key="main-class">
-      <defaultValue>${package}.${artifactId}</defaultValue>
+      <defaultValue>${package}.${artifactId}.${commandClassName}</defaultValue>
     </requiredProperty>
     <requiredProperty key="name" />
     <requiredProperty key="organizationId" />

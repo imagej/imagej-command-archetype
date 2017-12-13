@@ -36,8 +36,8 @@ import java.util.List;
  * and replace the {@link run} method implementation with your own logic.
  * </p>
  */
-@Plugin(type = Command.class, menuPath = "Plugins>Gauss Filtering")
-public class ${artifactId}<T extends RealType<T>> implements Command {
+@Plugin(type = Command.class, menuPath = "Plugins>${commandClassName}")
+public class ${commandClassName}<T extends RealType<T>> implements Command {
     //
     // Feel free to add more parameters here...
     //
@@ -97,7 +97,7 @@ public class ${artifactId}<T extends RealType<T>> implements Command {
             ij.ui().show(dataset);
 
             // invoke the plugin
-            ij.command().run(${artifactId}.class, true);
+            ij.command().run(${commandClassName}.class, true);
         }
     }
 
