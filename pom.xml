@@ -11,7 +11,7 @@
 
 	<groupId>net.imagej</groupId>
 	<artifactId>imagej-command-archetype</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
 
 	<name>ImageJ Command Archetype</name>
@@ -75,7 +75,8 @@
 		<connection>scm:git:git://github.com/imagej/imagej-command-archetype</connection>
 		<developerConnection>scm:git:git@github.com:imagej/imagej-command-archetype</developerConnection>
 		<url>https://github.com/imagej/imagej-command-archetype</url>
-	</scm>
+	  <tag>HEAD</tag>
+  </scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
 		<url>https://github.com/imagej/imagej-command-archetype/issues</url>
@@ -129,7 +130,7 @@
 					<executions>
 						<execution>
 							<id>copy-jars</id>
-							<phase/>
+							<phase />
 						</execution>
 					</executions>
 				</plugin>
