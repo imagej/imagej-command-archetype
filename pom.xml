@@ -16,7 +16,7 @@
 
 	<name>ImageJ Command Archetype</name>
 	<description>ImageJ Command Archetype: an Apache Maven archetype for ImageJ2 Commands.</description>
-	<url>None</url>
+	<url>https://imagej.net/ImageJ_Command_Archetype</url>
 	<inceptionYear>2017</inceptionYear>
 	<organization>
 		<name>ImageJ</name>
