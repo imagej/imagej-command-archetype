@@ -8,15 +8,12 @@ Maven archetype based on [https://github.com/imagej/example-imagej-command](http
 Usage
 -----
 
-1. `mvn install` this repository
-
-2. Subsequently, you can start the interactive creation mode that let's you select a GAV for a new `Command` that will be created in a new subdirectory of the current directory with the name of your `Command`'s `artifactId`:
+1. Start the interactive creation mode and select a coordinate (`groupId`, `artifactId`, `version`) for your project. This will create a new subdirectory (named after `artifactId`) with a minimal setup for a `Command`:
 
 ```
 $ mvn org.apache.maven.plugins:maven-archetype-plugin:3.0.1:generate \
     -DarchetypeGroupId=net.imagej \
-    -DarchetypeArtifactId=imagej-command-archetype \
-    -DarchetypeVersion=0.0.1-SNAPSHOT
+    -DarchetypeArtifactId=imagej-command-archetype
 ```
 
 **Interactive mode for GAV definition:**
