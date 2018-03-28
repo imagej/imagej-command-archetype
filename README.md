@@ -11,7 +11,7 @@ Usage
 1. Start the interactive creation mode and select a coordinate (`groupId`, `artifactId`, `version`) for your project. This will create a new subdirectory (named after `artifactId`) with a minimal setup for a `Command`:
 
 ```
-$ mvn org.apache.maven.plugins:maven-archetype-plugin:3.0.1:generate \
+$ mvn archetype:generate \
     -DarchetypeGroupId=net.imagej \
     -DarchetypeArtifactId=imagej-command-archetype
 ```
@@ -72,3 +72,28 @@ url: https://imagej.net/MyCommand
 urlIssueManagement: https://github.com/imagej/MyCommand/issues
  Y: :
 ```
+
+Known issues
+---
+
+If you get the following error message when trying to create a new command in interactive mode
+
+```
+...
+Define value for property 'description': : Something
+Mar 28, 2018 9:23:33 AM org.apache.velocity.runtime.log.JdkLogChute log
+INFO: FileResourceLoader : adding path '.'
+Mar 28, 2018 9:23:33 AM org.apache.velocity.runtime.log.JdkLogChute log
+INFO: Null reference [template 'developerId', line 1, column 1] : ${package.getClass().forName("java.lang.System").getProperty("user.name")} cannot be resolved.
+Define value for property 'developerId':  ${package.getClass().forName("java.lang.System").getProperty("user.name")}: : 
+```
+
+confirm that one of the first lines in the output says
+
+```
+[INFO] >>> maven-archetype-plugin:2.4:generate (default-cli) > generate-sources @ standalone-pom >>>
+```
+
+This means, that Maven is using version 2.4 of `maven-archetype-plugin` instead of the latest version, which enables us to generate even more meaningful default settings.
+
+If the above applies to you, delete `~/.m2/repositories/org/apache/maven/plugins` to force Maven to re-download the latest version of plugins.
