@@ -1,4 +1,4 @@
-[![](https://travis-ci.org/imagej/imagej-command-archetype.svg?branch=master)](https://travis-ci.org/imagej/imagej-command-archetype)
+[![](https://github.com/imagej/imagej-command-archetype/actions/workflows/build-main.yml/badge.svg)](https://github.com/imagej/imagej-command-archetype/actions/workflows/build-main.yml)
 
 imagej-command-archetype
 ========================
