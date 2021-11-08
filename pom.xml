@@ -72,7 +72,7 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:git://github.com/imagej/imagej-command-archetype</connection>
+		<connection>scm:git:https://github.com/imagej/imagej-command-archetype</connection>
 		<developerConnection>scm:git:git@github.com:imagej/imagej-command-archetype</developerConnection>
 		<url>https://github.com/imagej/imagej-command-archetype</url>
 	  <tag>HEAD</tag>
